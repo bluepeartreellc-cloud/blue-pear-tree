@@ -886,11 +886,11 @@
         </div>
       </div>
       <div class="form-box">
-        <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify netlify-honeypot="bot-field" action="/">
-          <input type="hidden" name="form-name" value="contact" />
-          <p style="position:absolute;left:-5000px;height:0;overflow:hidden;" aria-hidden="true">
-            <label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
-          </p>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="99964a76-eac2-4b57-b826-2506c0ece083" />
+          <input type="hidden" name="subject" value="Blue Pear Tree consultation request" />
+          <input type="hidden" name="from_name" value="Blue Pear Tree Website" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off" />
           <div id="form-status" role="status" aria-live="polite" style="display:none;margin-bottom:12px;padding:12px 14px;border-radius:10px;font-size:.92rem;"></div>
           <div class="form-group">
             <label for="name">Full name</label>
@@ -1025,7 +1025,7 @@
     revealEls.forEach(el => { el.classList.add('reveal'); io.observe(el); });
   }
 
-  // Netlify form AJAX
+  // Web3Forms AJAX
   const form = document.getElementById('contact-form');
   if (form) {
     const status = document.getElementById('form-status');
@@ -1042,9 +1042,9 @@
     function showStatus(type, message) {
       if (!status) return;
       status.style.display = 'block';
-      status.style.background = type === 'success' ? 'rgba(42,143,143,0.12)' : 'rgba(180,60,60,0.08)';
-      status.style.color = type === 'success' ? '#1B4F72' : '#8B2E2E';
-      status.style.border = type === 'success' ? '1px solid rgba(42,143,143,0.35)' : '1px solid rgba(180,60,60,0.25)';
+      status.style.background = type === 'success' ? 'rgba(58,138,128,0.12)' : 'rgba(180,60,60,0.08)';
+      status.style.color = type === 'success' ? '#1F4E56' : '#8B2E2E';
+      status.style.border = type === 'success' ? '1px solid rgba(58,138,128,0.35)' : '1px solid rgba(180,60,60,0.25)';
       status.textContent = message;
     }
     form.addEventListener('submit', async function (e) {
@@ -1052,13 +1052,12 @@
       if (btn) setLoading(true, 'Sending…');
       if (status) status.style.display = 'none';
       try {
-        const body = new URLSearchParams(new FormData(form)).toString();
-        const res = await fetch('/', {
+        const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body
+          body: new FormData(form)
         });
-        if (!res.ok) throw new Error('Submit failed');
+        const data = await res.json();
+        if (!res.ok || !data.success) throw new Error(data.message || 'Submit failed');
         form.reset();
         showStatus('success', 'Thank you. Your request has been received. We will respond within one business day.');
         setLoading(false, 'Request sent');
