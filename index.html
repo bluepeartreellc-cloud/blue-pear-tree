@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Pear Tree | Unbiased AI Advising for Healthcare | Nashville</title>
+  <meta name="description" content="Independent, vendor-neutral AI advising for healthcare practices and mid-size organizations in Nashville and surrounding areas. Fixed-fee assessments to determine whether AI is worth the investment—before capital is committed." />
+  <meta name="keywords" content="AI consulting Nashville, healthcare AI advising, vendor-neutral AI, AI readiness assessment Tennessee, unbiased AI advisor healthcare" />
+  <meta name="author" content="Blue Pear Tree" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="geo.region" content="US-TN" />
+  <meta name="geo.placename" content="Nashville" />
+  <link rel="canonical" href="https://bluepeartree.netlify.app/" />
+  <link rel="icon" href="assets/logo-mark.jpg?v=20260818c" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="assets/logo-mark.jpg?v=20260818c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bluepeartree.netlify.app/" />
+  <meta property="og:title" content="Blue Pear Tree | Unbiased AI Advising for Healthcare | Nashville" />
+  <meta property="og:description" content="Fixed-fee, vendor-neutral AI advising for healthcare. Decide if AI is worth it—before you invest." />
+  <meta property="og:site_name" content="Blue Pear Tree" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://bluepeartree.netlify.app/assets/logo-horizontal.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blue Pear Tree | Unbiased AI Advising for Healthcare" />
+  <meta name="twitter:description" content="Vendor-neutral AI advising for healthcare. Clear guidance before you invest." />
+  <meta name="twitter:image" content="https://bluepeartree.netlify.app/assets/logo-horizontal.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Blue Pear Tree",
+    "description": "Vendor-neutral AI advising for healthcare organizations. Fixed-fee assessments to decide if AI is worth the investment.",
+    "url": "https://bluepeartree.netlify.app/",
+    "email": "bluepeartreellc@gmail.com",
+    "areaServed": [
+      {"@type": "City", "name": "Nashville"},
+      {"@type": "AdministrativeArea", "name": "Middle Tennessee"}
+    ],
+    "serviceType": ["AI Consulting", "Healthcare AI Advising", "AI Readiness Assessment"],
+    "priceRange": "$$",
+    "image": "https://bluepeartree.netlify.app/assets/logo-horizontal.jpg",
+    "slogan": "Independent guidance so healthcare organizations invest in AI only when it is justified."
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1F4E56;
+      --primary-dark: #17383E;
+      --teal: #3A8A80;
+      --text: #2A3336;
+      --muted: #556266;
+      --bg: #F6F4EF;
+      --soft: #EEF3F1;
+      --soft-2: #E4EDEA;
+      --card: #FFFDF9;
+      --border: #D5DDDA;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max: 1080px;
+      --header: 72px;
+      --shadow-sm: 0 2px 10px rgba(31, 78, 86, 0.05);
+      --shadow-md: 0 8px 26px rgba(31, 78, 86, 0.08);
+      --shadow-lg: 0 16px 40px rgba(31, 78, 86, 0.1);
+      --fade-in: 480ms;
+      --fade-out: 720ms;
+      --fade-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+    @supports (scroll-behavior: smooth) {
+      html { scroll-behavior: smooth; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    body {
+      font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    h1,h2,h3,h4 {
+      font-family: 'Source Serif 4', 'Times New Roman', serif;
+      font-weight: 600;
+      letter-spacing: -0.012em;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+    a { color: var(--teal); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--primary); }
+    img { max-width:100%; display:block; }
+    .container { width:100%; max-width:var(--max); margin:0 auto; padding:0 20px; }
+
+    /* Header */
+    header {
+      position:fixed; top:0; left:0; right:0; height:var(--header); z-index:100;
+      background:rgba(246,244,239,.94); backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+    }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; height:100%; gap:12px; }
+    .logo { display:flex; align-items:center; gap:10px; flex-shrink:0; }
+    .logo img {
+      height:38px; width:38px; border-radius:9px; object-fit:cover;
+      box-shadow: 0 0 0 1px rgba(27,79,114,.08);
+    }
+    .logo span { font-family:'Source Serif 4', serif; font-weight:600; font-size:1.05rem; color:var(--primary); }
+    nav { display:flex; align-items:center; gap:18px; }
+    nav a {
+      font-size:.88rem; font-weight:500; color:var(--muted); white-space:nowrap;
+      position:relative; transition: color .3s ease;
+    }
+    nav a:not(.btn)::after {
+      content:''; position:absolute; left:0; bottom:-5px;
+      width:0; height:2px; background:linear-gradient(90deg, var(--teal), var(--primary));
+      border-radius:2px; transition: width .4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    nav a:not(.btn):hover::after, nav a:not(.btn).active::after { width:100%; }
+    nav a:hover, nav a.active { color:var(--primary); }
+    .nav-cta { margin-left:4px; }
+    .menu-btn { display:none; background:none; border:none; cursor:pointer; padding:8px; min-width:44px; min-height:44px; }
+    .menu-btn span { display:block; width:22px; height:2px; background:var(--primary); margin:5px 0; }
+
+    /* Buttons — large, tappable */
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-height:48px; padding:12px 22px; font-size:.95rem; font-weight:600;
+      border-radius:var(--radius-sm); border:none; cursor:pointer;
+      transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .3s ease, background .25s ease, border-color .25s ease;
+      text-decoration:none; letter-spacing:0.01em;
+    }
+    .btn-primary { background:var(--primary); color:#fff; box-shadow:0 4px 14px rgba(31,78,86,.18); }
+    .btn-primary:hover { background:var(--primary-dark); color:#fff; transform:translateY(-1px); }
+    .btn-outline { background:var(--card); color:var(--primary); border:1.5px solid var(--border); }
+    .btn-outline:hover { border-color:var(--primary); background:var(--soft); color:var(--primary); }
+    .btn-teal { background:var(--teal); color:#fff; }
+    .btn-teal:hover { background:#2F736B; color:#fff; }
+    .btn-block { width:100%; }
+
+    .hero {
+      position:relative;
+      padding: calc(var(--header) + 48px) 0 64px;
+      background: var(--soft);
+      overflow:hidden;
+    }
+    .hero-photo {
+      position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+      opacity:.16; filter:saturate(.55) contrast(.95);
+    }
+    .hero-veil {
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(246,244,239,.55) 0%, rgba(238,243,241,.82) 55%, rgba(246,244,239,.94) 100%);
+    }
+    .hero-inner { position:relative; z-index:1; max-width:680px; margin:0 auto; text-align:center; }
+    .eyebrow {
+      display:inline-block; font-size:.75rem; font-weight:600; color:var(--teal);
+      text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px;
+    }
+    .hero h1 {
+      font-size:clamp(1.65rem, 4vw, 2.25rem);
+      margin-bottom:14px; color:var(--primary);
+    }
+    .hero-lead {
+      font-size:1.05rem; color:var(--muted); margin:0 auto 22px; max-width:540px; line-height:1.7;
+    }
+    .hero-mark {
+      width:72px; height:72px; margin:0 auto 18px; border-radius:16px;
+      object-fit:cover; box-shadow: var(--shadow-md);
+    }
+    .hero-cta { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-bottom:24px; }
+    .hero-proof {
+      display:flex; flex-wrap:wrap; justify-content:center; gap:10px 20px;
+      font-size:.86rem; color:var(--muted); padding-top:4px;
+    }
+    .hero-proof span { display:inline-flex; align-items:center; gap:6px; }
+    .hero-proof strong { color:var(--primary); font-weight:600; }
+
+    /* Sections */
+    section { padding:64px 0; }
+    .section-head { text-align:center; max-width:600px; margin:0 auto 36px; }
+    .section-head h2 { font-size:clamp(1.45rem, 2.6vw, 1.9rem); margin-bottom:10px; }
+    .section-head p { color:var(--muted); font-size:1rem; }
+
+    /* Service cards */
+    .cards {
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+    }
+    .card {
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:24px 20px; box-shadow:var(--shadow-sm);
+      display:flex; flex-direction:column;
+      transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .45s ease;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .card-icon {
+      width:56px; height:56px; border-radius:12px; object-fit:cover;
+      margin-bottom:14px; border:1px solid var(--border);
+    }
+    .about-photo {
+      width:100%; min-height:180px; max-height:200px; object-fit:cover;
+      border-radius:var(--radius); border:1px solid var(--border);
+      grid-column: 1 / -1;
+    }
+    .card .label {
+      font-size:.72rem; font-weight:600; color:var(--teal);
+      text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px;
+    }
+    .card h3 { font-size:1.1rem; margin-bottom:8px; }
+    .card .price { font-size:1.2rem; font-weight:700; color:var(--primary); margin-bottom:8px; font-family:'Source Serif 4', serif; }
+    .card p { font-size:.92rem; color:var(--muted); margin-bottom:14px; flex-grow:1; }
+    .card ul { list-style:none; margin-bottom:18px; }
+    .card li {
+      font-size:.88rem; color:var(--text); padding:5px 0 5px 16px; position:relative;
+      border-bottom:1px solid #F1F5F9;
+    }
+    .card li:last-child { border-bottom:none; }
+    .card li::before {
+      content:''; position:absolute; left:0; top:11px; width:7px; height:7px;
+      background:var(--teal); border-radius:50%;
+    }
+    .card.featured {
+      margin-top:12px;
+      border-color:rgba(58,138,128,.4);
+      box-shadow:0 10px 28px rgba(58,138,128,.16);
+      position:relative;
+    }
+    .card.featured::before {
+      content:'Best place to start'; position:absolute; top:-11px; left:50%; transform:translateX(-50%);
+      background:var(--teal); color:#fff; font-size:.68rem; font-weight:600;
+      padding:4px 10px; border-radius:100px; white-space:nowrap;
+    }
+
+    /* Why us */
+    .why { background:var(--soft); }
+    .why-grid {
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+    }
+    .why-item {
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:22px 18px; box-shadow:var(--shadow-sm);
+      transition: transform .4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .4s ease;
+    }
+    .why-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .why-item h3 { font-size:1.02rem; margin-bottom:8px; }
+    .why-item p { font-size:.92rem; color:var(--muted); margin:0; }
+
+    /* Proof strip */
+    .proof-strip {
+      display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; text-align:center;
+    }
+    .proof-item {
+      background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 12px;
+      transition: transform .4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .4s ease;
+    }
+    .proof-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+
+    /* Case studies */
+    .cases { background: transparent; }
+    .case-grid {
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+    }
+    .case-card {
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:24px 20px; box-shadow:var(--shadow-sm);
+      display:flex; flex-direction:column;
+      transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .45s ease;
+    }
+    .case-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .case-card .label {
+      font-size:.72rem; font-weight:600; color:var(--teal);
+      text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px;
+    }
+    .case-card h3 { font-size:1.08rem; margin-bottom:8px; }
+    .case-stat {
+      font-family:'Source Serif 4', serif; font-size:1.15rem; font-weight:700;
+      color:var(--primary); margin-bottom:10px; letter-spacing:-0.02em;
+    }
+    .case-card p { font-size:.9rem; color:var(--muted); margin:0; flex-grow:1; }
+    .case-card sup a { color:var(--teal); font-weight:600; }
+    .footnotes {
+      max-width:760px; margin:32px auto 0; padding-top:20px; border-top:1px solid var(--border);
+    }
+    .footnotes h4 {
+      font-size:.82rem; text-transform:uppercase; letter-spacing:.06em;
+      margin-bottom:10px; color:var(--primary);
+    }
+    .footnotes ol {
+      margin:0 0 10px 1.1rem; color:var(--muted); font-size:.76rem; line-height:1.55;
+    }
+    .footnotes li { margin-bottom:7px; }
+    .footnotes a { color:var(--teal); word-break:break-word; }
+    .footnotes .note { font-size:.74rem; color:var(--muted); margin:0; }
+    .proof-item strong {
+      display:block; font-size:1.15rem; color:var(--primary);
+      font-family:'Source Serif 4', serif; margin-bottom:4px;
+    }
+    .proof-item span { font-size:.82rem; color:var(--muted); }
+
+    /* About */
+    .about-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; }
+    .about-card {
+      background:var(--soft); border:1px solid var(--border); border-radius:var(--radius); padding:28px;
+    }
+    .about-card h3 { font-size:1.1rem; margin-bottom:10px; }
+    .about-card p { color:var(--muted); font-size:.95rem; margin-bottom:12px; }
+    .about-card p:last-child { margin-bottom:0; }
+    .creds { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .cred {
+      background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px;
+    }
+    .cred strong { display:block; font-size:.88rem; color:var(--primary); margin-bottom:3px; }
+    .cred span { font-size:.8rem; color:var(--muted); }
+
+    /* Process */
+    .steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+    .step { text-align:center; padding:8px; }
+    .step-num {
+      width:44px; height:44px; margin:0 auto 12px; border-radius:12px;
+      background:linear-gradient(135deg, var(--primary), var(--teal)); color:#fff;
+      font-family:'Source Serif 4', serif; font-weight:700; font-size:1.05rem;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 6px 16px rgba(27,79,114,.2);
+    }
+    .step h3 { font-size:1.05rem; margin-bottom:6px; }
+    .step p { font-size:.9rem; color:var(--muted); }
+
+    /* FAQ */
+    .faq { background:var(--soft); }
+    .faq-list { max-width:720px; margin:0 auto; }
+    details {
+      background:var(--card); border:1px solid var(--border); border-radius:12px;
+      margin-bottom:10px; padding:14px 16px;
+    }
+    summary {
+      font-weight:600; color:var(--primary); cursor:pointer; font-size:.95rem;
+      list-style:none; display:flex; justify-content:space-between; align-items:center; gap:12px;
+    }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:'+'; font-weight:700; color:var(--teal); font-size:1.1rem; }
+    details[open] summary::after { content:'–'; }
+    details p { margin-top:10px; font-size:.92rem; color:var(--muted); line-height:1.6; }
+
+    /* Contact */
+    .contact-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:28px; align-items:start; }
+    .contact-info h2 { font-size:1.6rem; margin-bottom:10px; }
+    .contact-info > p { color:var(--muted); margin-bottom:20px; font-size:1rem; }
+    .contact-row {
+      display:flex; align-items:flex-start; gap:12px; margin-bottom:14px;
+    }
+    .contact-row .icon {
+      width:42px; height:42px; flex-shrink:0; background:var(--soft);
+      border:1px solid var(--border); border-radius:10px;
+      display:flex; align-items:center; justify-content:center; font-size:1rem;
+    }
+    .contact-row strong { display:block; font-size:.88rem; color:var(--primary); }
+    .contact-row span, .contact-row a { font-size:.92rem; color:var(--muted); }
+    .form-box {
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:26px; box-shadow:var(--shadow-md);
+    }
+    .form-group { margin-bottom:14px; }
+    .form-group label { display:block; font-size:.85rem; font-weight:600; margin-bottom:5px; color:var(--text); }
+    .form-group input, .form-group textarea, .form-group select {
+      width:100%; min-height:48px; padding:12px 14px; border:1.5px solid var(--border);
+      border-radius:var(--radius-sm); font-family: 'Atkinson Hyperlegible', sans-serif; font-size:1rem;
+      color:var(--text); background:var(--card);
+    }
+    .form-group textarea { min-height:96px; resize:vertical; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline:none; border-color:var(--teal); box-shadow:0 0 0 3px rgba(58,138,128,.16);
+    }
+
+    /* Mid CTA band */
+    .cta-band {
+      background:linear-gradient(135deg, var(--primary) 0%, #1A5F7A 55%, var(--teal) 100%);
+      border-radius:18px; padding:36px 28px; text-align:center; color:#fff;
+      box-shadow:var(--shadow-lg);
+    }
+    .cta-band h2 { color:#fff; font-size:1.5rem; margin-bottom:8px; }
+    .cta-band p { color:rgba(255,255,255,.92); margin-bottom:18px; font-size:1rem; }
+    .cta-band .btn { background:var(--card); color:var(--primary); }
+
+    /* Footer */
+    footer {
+      background:var(--primary-dark); color:rgba(255,255,255,.88); padding:40px 0 24px;
+    }
+    .footer-grid {
+      display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:28px; margin-bottom:28px;
+    }
+    .footer-brand p { font-size:.9rem; margin-top:10px; color:rgba(255,255,255,.7); max-width:280px; line-height:1.55; }
+    .footer-col h4 {
+      color:#fff; font-size:.78rem; text-transform:uppercase; letter-spacing:.06em;
+      margin-bottom:12px; opacity:.9; font-family: 'Atkinson Hyperlegible', sans-serif; font-weight:600;
+    }
+    .footer-col a, .footer-col span {
+      display:block; color:rgba(255,255,255,.72); font-size:.9rem; margin-bottom:8px;
+    }
+    .footer-col a:hover { color:#fff; }
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.12); padding-top:18px;
+      display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px;
+      font-size:.82rem; color:rgba(255,255,255,.55);
+    }
+
+    /* Mobile sticky CTA */
+    .mobile-cta {
+      display:none; position:fixed; bottom:0; left:0; right:0; z-index:90;
+      padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+      background:rgba(255,255,255,.96); backdrop-filter:blur(10px);
+      border-top:1px solid var(--border); box-shadow:0 -4px 20px rgba(27,79,114,.08);
+    }
+
+    /* Reveal + stagger */
+    .reveal {
+      opacity:0;
+      transform: translateY(22px);
+      transition:
+        opacity .7s var(--fade-ease),
+        transform .7s var(--fade-ease);
+      transition-delay: var(--stagger, 0ms);
+    }
+    .reveal.visible { opacity:1; transform:none; }
+    .hero-inner > * {
+      opacity:0;
+      transform: translateY(16px);
+      animation: none;
+    }
+    body.is-ready .hero-inner > * {
+      animation: splashIn .7s var(--fade-ease) forwards;
+    }
+    body.is-ready .hero-inner > *:nth-child(1) { animation-delay: 80ms; }
+    body.is-ready .hero-inner > *:nth-child(2) { animation-delay: 160ms; }
+    body.is-ready .hero-inner > *:nth-child(3) { animation-delay: 240ms; }
+    body.is-ready .hero-inner > *:nth-child(4) { animation-delay: 320ms; }
+    body.is-ready .hero-inner > *:nth-child(5) { animation-delay: 400ms; }
+    body.is-ready .hero-inner > *:nth-child(6) { animation-delay: 480ms; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity:1; transform:none; transition:none; }
+      .hero-inner > *, body.is-ready .hero-inner > * {
+        opacity:1; transform:none; animation:none;
+      }
+      .card:hover, .case-card:hover, .why-item:hover, .proof-item:hover, .btn:hover {
+        transform: none;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width:900px) {
+      .cards, .why-grid, .steps, .proof-strip, .about-grid, .contact-grid, .footer-grid, .case-grid {
+        grid-template-columns:1fr;
+      }
+      .proof-strip { grid-template-columns:1fr 1fr; }
+      .creds { grid-template-columns:1fr; }
+      nav { display:none; }
+      nav.open {
+        display:flex; flex-direction:column; position:absolute; top:var(--header);
+        left:0; right:0; background:var(--card); padding:16px 20px 20px; gap:14px;
+        border-bottom:1px solid var(--border); box-shadow:0 10px 24px rgba(0,0,0,.06);
+        align-items:stretch;
+      }
+      nav.open a { padding:10px 0; }
+      nav.open .nav-cta { margin-left:0; }
+      .menu-btn { display:flex; align-items:center; justify-content:center; }
+      .mobile-cta { display:block; }
+      body { padding-bottom:76px; }
+      .logo span { font-size:.98rem; }
+    }
+    @media (max-width:600px) {
+      .hero { padding: calc(var(--header) + 36px) 0 44px; }
+      .hero-cta .btn { width:100%; }
+      section { padding:48px 0; }
+      .proof-strip { grid-template-columns:1fr 1fr; }
+    }
+
+    /* Logo splash + fade timing */
+    #page-loader {
+      position:fixed; inset:0; z-index:9999;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      background:var(--primary-dark);
+      transition: opacity var(--fade-out) var(--fade-ease),
+                  visibility var(--fade-out) var(--fade-ease);
+    }
+    #page-loader.hide { opacity:0; visibility:hidden; pointer-events:none; }
+    .splash-logo {
+      width:96px; height:96px; border-radius:22px; object-fit:cover;
+      box-shadow: 0 12px 40px rgba(0,0,0,.28);
+      opacity:0;
+      animation: splashIn var(--fade-in) var(--fade-ease) 80ms forwards,
+                 logoPulse 1.6s var(--fade-ease) 700ms infinite;
+    }
+    .splash-name {
+      margin-top:18px; font-family:'Source Serif 4', serif;
+      font-weight:600; letter-spacing:.02em; color:#fff; font-size:1.05rem;
+      opacity:0;
+      animation: splashIn var(--fade-in) var(--fade-ease) 260ms forwards;
+    }
+    .splash-sub {
+      margin-top:6px; font-size:.8rem; color:rgba(255,255,255,.65);
+      opacity:0;
+      animation: splashIn var(--fade-in) var(--fade-ease) 420ms forwards;
+    }
+    @keyframes splashIn {
+      from { opacity:0; transform: translateY(8px); }
+      to { opacity:1; transform: none; }
+    }
+    @keyframes logoPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.035); }
+    }
+    main.site {
+      opacity:0;
+      transition: opacity var(--fade-out) var(--fade-ease);
+    }
+    body.is-ready main.site { opacity:1; }
+    .btn-spinner {
+      width:16px; height:16px; border:2px solid rgba(255,255,255,.35);
+      border-top-color:#fff; border-radius:50%;
+      animation: spin .7s linear infinite;
+      margin-right:8px; display:none; flex-shrink:0;
+    }
+    .btn.is-loading .btn-spinner { display:inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .splash-logo, .splash-name, .splash-sub { animation: none; opacity:1; }
+      .btn-spinner { animation: none; }
+      #page-loader, main.site { transition: none; }
+      main.site { opacity:1; }
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader" role="status" aria-live="polite" aria-label="Loading Blue Pear Tree">
+  <img class="splash-logo" src="assets/logo-mark.jpg?v=20260818c" alt="Blue Pear Tree" width="96" height="96" />
+  <div class="splash-name">Blue Pear Tree</div>
+  <div class="splash-sub">Independent AI Advising</div>
+</div>
+
+<main class="site">
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="assets/logo-mark.jpg?v=20260818c" alt="Blue Pear Tree logo" width="38" height="38" />
+      <span>Blue Pear Tree</span>
+    </a>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary nav-cta" style="min-height:42px;padding:8px 16px;font-size:.88rem;">Book a Consultation</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- 1. FIRST SCREEN -->
+<section class="hero" id="top">
+  <img class="hero-photo" src="assets/hero-clinic.jpg" alt="" width="1600" height="900" />
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <img class="hero-mark" src="assets/logo-mark.jpg?v=20260818c" alt="Blue Pear Tree" width="72" height="72" />
+      <div class="eyebrow">Independent · Vendor-Neutral · Nashville &amp; Surrounding Areas</div>
+      <h1>Know whether AI is worth it—before you spend</h1>
+      <p class="hero-lead">
+        Independent advising for practices and mid-size healthcare organizations. We test whether AI solves a real operational problem and whether the investment is justified. We do not sell software.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+      </div>
+      <div class="hero-proof">
+        <span><strong>Vendor-neutral</strong> guidance</span>
+        <span><strong>Fixed-fee</strong> engagements from $1,800</span>
+        <span><strong>Response</strong> within one business day</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we offer</span>
+      <h2>Engagement options</h2>
+      <p>Fixed-fee engagements scoped to the decision your organization needs to make.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img class="card-icon" src="assets/icon-discovery.jpg" alt="" width="56" height="56" />
+        <div class="label">Discovery Scan</div>
+        <h3>Is AI worth exploring?</h3>
+        <div class="price">$1,800 – $2,800</div>
+        <p>A focused diagnostic that identifies viable opportunities and determines whether a full assessment is warranted.</p>
+        <ul>
+          <li>3–5 business days</li>
+          <li>1–2 focused conversations</li>
+          <li>Clear go / no-go recommendation</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-block">Book a Consultation</a>
+      </div>
+      <div class="card featured">
+        <img class="card-icon" src="assets/icon-root.jpg" alt="" width="56" height="56" />
+        <div class="label">Root Assessment</div>
+        <h3>Where should you focus?</h3>
+        <div class="price">$5,000 – $9,500</div>
+        <p>Prioritizes practical AI opportunities by impact, effort, readiness, and financial feasibility, and delivers a 90-day action plan.</p>
+        <ul>
+          <li>1–3 weeks</li>
+          <li>Ranked opportunities + feasibility notes</li>
+          <li>Written findings and live debrief</li>
+        </ul>
+        <a href="#contact" class="btn btn-teal btn-block">Book a Consultation</a>
+      </div>
+      <div class="card">
+        <img class="card-icon" src="assets/icon-project.jpg" alt="" width="56" height="56" />
+        <div class="label">Project or Partnership</div>
+        <h3>Implementation support when justified</h3>
+        <div class="price">Scoped fixed fee</div>
+        <p>Project support or ongoing advisory after a documented business case. Projects are typically scoped at $18,000–$48,000.</p>
+        <ul>
+          <li>4–12 weeks for projects</li>
+          <li>Neutral vendor evaluation</li>
+          <li>Monthly advisory from ~$3,500</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-block">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why Blue Pear Tree</span>
+      <h2>Designed for executive decisions—not product demos</h2>
+      <p>Healthcare leaders need an independent assessment before capital is committed—not another product demonstration.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Vendor-neutral by design</h3>
+        <p>No software to sell, no commissions, and no preferred partners. Recommendations are driven solely by your operational constraints and objectives.</p>
+      </div>
+      <div class="why-item">
+        <h3>Feasibility before tools</h3>
+        <p>We recommend AI only when expected benefit outweighs cost, risk, and change effort. When it does not, we state that clearly.</p>
+      </div>
+      <div class="why-item">
+        <h3>Fixed fees, clear scope</h3>
+        <p>Investment and deliverables are defined before work begins—structured for practices and mid-size organizations that require budget predictability.</p>
+      </div>
+    </div>
+
+    <div class="proof-strip" style="margin-top:28px;">
+      <div class="proof-item">
+        <strong>Fortune-company</strong>
+        <span>process-improvement experience</span>
+      </div>
+      <div class="proof-item">
+        <strong>BS · IE · EMBA</strong>
+        <span>biology, engineering, and business</span>
+      </div>
+      <div class="proof-item">
+        <strong>HIPAA · NIST AI RMF</strong>
+        <span>aligned professional standards</span>
+      </div>
+      <div class="proof-item">
+        <strong>Nashville area</strong>
+        <span>Middle Tennessee service region</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE / CASE STUDIES -->
+<section class="cases" id="evidence">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Published evidence</span>
+      <h2>When the wrong AI costs more than it saves</h2>
+      <p>Independent reporting shows that buying or building the wrong AI capability often produces spend without return. Feasibility first is how you avoid that pattern.</p>
+    </div>
+    <div class="case-grid">
+      <article class="case-card">
+        <div class="label">Enterprise GenAI pilots</div>
+        <h3>Investment with no measurable P&L</h3>
+        <div class="case-stat">$30–40B invested · 95% no ROI</div>
+        <p>
+          MIT NANDA’s <em>State of AI in Business 2025</em> found that despite an estimated $30–40 billion in enterprise generative-AI spend, 95% of pilots delivered no measurable profit-and-loss impact. The typical failure was not the model—it was selecting use cases that never connected to a real workflow or financial outcome.<sup><a href="#fn1" id="ref1">1</a></sup>
+        </p>
+      </article>
+      <article class="case-card">
+        <div class="label">Healthcare automation</div>
+        <h3>Olive AI: promised savings, no lasting ROI</h3>
+        <div class="case-stat">~$900M raised · shut down 2023</div>
+        <p>
+          Olive sold hospitals an “AI workforce” for revenue-cycle and administrative work, reached a $4 billion valuation, then shut down after hospitals reported inconsistent delivery and weak return. Rapid scale without a proven savings case left buyers with implementation cost and no durable benefit.<sup><a href="#fn2" id="ref2">2</a></sup>
+        </p>
+      </article>
+      <article class="case-card">
+        <div class="label">Clinical decision support</div>
+        <h3>MD Anderson & IBM Watson: spend, no patients treated</h3>
+        <div class="case-stat">$62.1M · 0 patients treated</div>
+        <p>
+          A University of Texas System audit found MD Anderson spent $62.1 million on an IBM Watson oncology project that never treated a patient. The institution later ended the collaboration. The cost was real; the clinical and financial return was not.<sup><a href="#fn3" id="ref3">3</a></sup>
+        </p>
+      </article>
+    </div>
+    <div class="footnotes">
+      <h4>Sources</h4>
+      <ol>
+        <li id="fn1">Challapally, A., Pease, C., Raskar, R., and Chari, P. <em>The GenAI Divide: State of AI in Business 2025</em>. MIT NANDA. Reported figures of $30–40 billion enterprise investment and 95% of pilots with no measurable P&L impact. Coverage: Forbes (26 Aug 2025) and Legal.io (23 Aug 2025). Report PDF: <a href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf" target="_blank" rel="noopener">mlq.ai</a>. <a href="#ref1">↩</a></li>
+        <li id="fn2">Healthcare Dive, “Health AI startup Olive to shut down” (31 Oct 2023). Olive, once valued at $4 billion after raising nearly $900 million, wound down operations and sold remaining units after failed scale and weak hospital ROI. <a href="https://www.healthcaredive.com/news/olive-ai-shuts-down/698455/" target="_blank" rel="noopener">healthcaredive.com</a>. <a href="#ref2">↩</a></li>
+        <li id="fn3">Schmidt, C. “M. D. Anderson Breaks With IBM Watson, Raising Questions About Artificial Intelligence in Oncology.” <em>Journal of the National Cancer Institute</em> 109, no. 5 (2017). Also: Mulcahy, N. “Big Data Bust: MD Anderson-Watson Project Dies.” <em>Medscape</em> (22 Feb 2017); The Cancer Letter (17 Feb 2017) on the $62.1 million UT System audit. <a href="https://academic.oup.com/jnci/article-abstract/109/5/djx113/3847623" target="_blank" rel="noopener">JNCI</a>. <a href="#ref3">↩</a></li>
+      </ol>
+      <p class="note">Figures are summarized from public research and reporting for education. Individual results vary. Blue Pear Tree is not affiliated with the cited organizations. This section is not legal or investment advice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mid CTA -->
+<section style="padding-top:8px;padding-bottom:8px;">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Need an independent AI decision—not another vendor conversation?</h2>
+      <p>Schedule a consultation. We will focus on your operational challenges and whether AI is an appropriate response.</p>
+      <a href="#contact" class="btn">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2>Leadership, process, and standards</h2>
+      <p>Independent advising grounded in operational discipline—not product distribution.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Approach to healthcare engagements</h3>
+        <p>
+          Blue Pear Tree is led by a practitioner with a BS in Biology, industrial engineering credentials, and an Executive MBA. Process-improvement experience across Fortune companies informs every engagement: map the workflow, measure what matters, and only then evaluate AI.
+        </p>
+        <p>
+          We serve independent practices and mid-size healthcare organizations across Nashville and surrounding areas. Engagements are fixed-fee and scoped to the decision required—Discovery Scan, Root Assessment, or project support following a documented business case.
+        </p>
+        <p>
+          Recommendations are aligned with HIPAA expectations and the NIST AI Risk Management Framework (Govern, Map, Measure, Manage). Blue Pear Tree does not provide legal advice or formal certification services.
+        </p>
+      </div>
+      <div class="creds">
+        <img class="about-photo" src="assets/about-workspace.jpg" alt="Quiet workspace used for independent assessment work" width="800" height="600" />
+        <div class="cred">
+          <strong>BS Biology</strong>
+          <span>Scientific foundation</span>
+        </div>
+        <div class="cred">
+          <strong>Industrial Engineering</strong>
+          <span>Process and systems design</span>
+        </div>
+        <div class="cred">
+          <strong>Executive MBA</strong>
+          <span>Strategy and financial judgment</span>
+        </div>
+        <div class="cred">
+          <strong>Operations discipline</strong>
+          <span>Fortune-company experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section id="process" style="background:var(--soft);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From initial consultation to a defined plan</h2>
+      <p>Most clients progress from initial conversation to decision support within three weeks.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Listen</h3>
+        <p>Document operational challenges, constraints, and priorities. Typically 1–3 days.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Evaluate</h3>
+        <p>Map workflows, assess AI suitability, and evaluate cost, effort, and risk in combination.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Advise</h3>
+        <p>Deliver clear findings: a prioritized plan when AI is appropriate, or a recommendation to proceed without it when it is not.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:28px;">
+      <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Do you sell AI software or represent vendors?</summary>
+        <p>No. Blue Pear Tree is vendor-neutral. We do not sell software, accept referral fees, or promote preferred tools. Our role is strictly independent advisory.</p>
+      </details>
+      <details>
+        <summary>Who is a good fit?</summary>
+        <p>Independent practices and mid-size healthcare organizations in Nashville and surrounding areas seeking a clear decision on AI prior to investment—particularly regarding documentation burden, prior authorization, staffing, or workflow efficiency.</p>
+      </details>
+      <details>
+        <summary>What does a first engagement cost?</summary>
+        <p>Discovery Scan: $1,800–$2,800. Root Assessment: $5,000–$9,500. Projects are scoped on a fixed-fee basis (typically $18,000–$48,000). All fees are confirmed in writing before work begins.</p>
+      </details>
+      <details>
+        <summary>What if AI is not the right answer?</summary>
+        <p>We state that recommendation clearly. In some cases, a process change or simpler tool is the better path. You still receive a defined recommendation and next steps.</p>
+      </details>
+      <details>
+        <summary>How fast can we start?</summary>
+        <p>Following an initial consultation, Discovery Scans are typically completed in 3–5 business days. Root Assessments are generally completed within 1–3 weeks.</p>
+      </details>
+      <details>
+        <summary>Why evaluate before buying a tool?</summary>
+        <p>Published cases show the cost of a poor fit can exceed any promised savings—from enterprise GenAI pilots with no P&L impact to healthcare projects that spent tens of millions without treating a patient. An independent feasibility review is designed to prevent that spend. See <a href="#evidence">published evidence</a>.</p>
+      </details>
+      <details>
+        <summary>How do I get in touch?</summary>
+        <p>Use the form below or email <a href="mailto:bluepeartreellc@gmail.com">bluepeartreellc@gmail.com</a>. We respond within one business day.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CONTACT / FINAL CTA -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Request a Consultation</h2>
+        <p>Share the operational challenge or decision under consideration. We will respond within one business day with a focused discussion—not a product pitch.</p>
+        <div class="contact-row">
+          <div class="icon">✉</div>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:bluepeartreellc@gmail.com">bluepeartreellc@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Service area</strong>
+            <span>Nashville and surrounding areas</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon">◷</div>
+          <div>
+            <strong>Response time</strong>
+            <span>Within one business day</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-box">
+        <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify netlify-honeypot="bot-field" action="/">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="position:absolute;left:-5000px;height:0;overflow:hidden;" aria-hidden="true">
+            <label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+          <div id="form-status" role="status" aria-live="polite" style="display:none;margin-bottom:12px;padding:12px 14px;border-radius:10px;font-size:.92rem;"></div>
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" maxlength="120" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@organization.com" autocomplete="email" maxlength="160" />
+          </div>
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" required placeholder="Briefly describe the operational challenge or decision (e.g., documentation burden, prior authorization, vendor evaluation)" maxlength="2000" rows="4"></textarea>
+          </div>
+          <button type="submit" id="form-submit" class="btn btn-primary btn-block">
+            <span class="btn-spinner" aria-hidden="true"></span>
+            <span class="btn-label">Book a Consultation</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="assets/logo-icon.jpg?v=20260818c" alt="Blue Pear Tree" style="height:34px;width:34px;border-radius:8px;object-fit:cover;filter:brightness(0) invert(1);opacity:.92;" width="34" height="34" />
+          <span style="font-family:'Source Serif 4', serif;font-weight:600;color:#fff;">Blue Pear Tree</span>
+        </div>
+        <p>Independent, vendor-neutral AI advising for healthcare organizations. Guidance structured so investment proceeds only when practical and financially justified.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:bluepeartreellc@gmail.com">bluepeartreellc@gmail.com</a>
+        <span>Nashville and surrounding areas</span>
+        <a href="#contact">Book a Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Blue Pear Tree. All rights reserved.</span>
+      <span>Unbiased AI Advising for Healthcare</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="#contact" class="btn btn-primary btn-block">Book a Consultation</a>
+</div>
+</main>
+
+<script>
+(function () {
+  const loader = document.getElementById('page-loader');
+  const HOLD_MS = 1100;
+  const FADE_OUT_MS = 720;
+  const MAX_WAIT_MS = 2800;
+  const started = Date.now();
+
+  function revealPage() {
+    if (!loader || loader.classList.contains('hide')) return;
+    const elapsed = Date.now() - started;
+    const wait = Math.max(0, HOLD_MS - elapsed);
+    setTimeout(() => {
+      document.body.classList.add('is-ready');
+      loader.classList.add('hide');
+    }, wait);
+  }
+
+  window.addEventListener('load', revealPage);
+  setTimeout(revealPage, MAX_WAIT_MS);
+
+  const nav = document.getElementById('nav');
+  const menuBtn = document.getElementById('menuBtn');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  }
+
+  const header = document.querySelector('header');
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (header) header.classList.toggle('scrolled', y > 8);
+      let current = '';
+      for (let i = 0; i < sections.length; i++) {
+        if (y >= sections[i].offsetTop - 100) current = sections[i].id;
+      }
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const revealEls = document.querySelectorAll('.section-head, .card, .why-item, .step, .about-card, .cred, .cta-band, .proof-item, .case-card, .footnotes, .faq-list details');
+  const STAGGER = 90;
+  const groups = new Map();
+  revealEls.forEach((el) => {
+    const key = el.parentElement;
+    const i = groups.has(key) ? groups.get(key) : 0;
+    groups.set(key, i + 1);
+    el.style.setProperty('--stagger', (i * STAGGER) + 'ms');
+  });
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealEls.forEach(el => el.classList.add('visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+    revealEls.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  }
+
+  // Netlify form AJAX
+  const form = document.getElementById('contact-form');
+  if (form) {
+    const status = document.getElementById('form-status');
+    const btn = document.getElementById('form-submit');
+    const btnLabel = btn ? btn.querySelector('.btn-label') : null;
+    const originalLabel = btnLabel ? btnLabel.textContent : 'Book a Consultation';
+    function setLoading(on, label) {
+      if (!btn) return;
+      btn.disabled = on;
+      btn.classList.toggle('is-loading', on);
+      btn.style.opacity = on ? '0.9' : '1';
+      if (btnLabel) btnLabel.textContent = label;
+    }
+    function showStatus(type, message) {
+      if (!status) return;
+      status.style.display = 'block';
+      status.style.background = type === 'success' ? 'rgba(42,143,143,0.12)' : 'rgba(180,60,60,0.08)';
+      status.style.color = type === 'success' ? '#1B4F72' : '#8B2E2E';
+      status.style.border = type === 'success' ? '1px solid rgba(42,143,143,0.35)' : '1px solid rgba(180,60,60,0.25)';
+      status.textContent = message;
+    }
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      if (btn) setLoading(true, 'Sending…');
+      if (status) status.style.display = 'none';
+      try {
+        const body = new URLSearchParams(new FormData(form)).toString();
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body
+        });
+        if (!res.ok) throw new Error('Submit failed');
+        form.reset();
+        showStatus('success', 'Thank you. Your request has been received. We will respond within one business day.');
+        setLoading(false, 'Request sent');
+        setTimeout(() => setLoading(false, originalLabel), 2500);
+      } catch (err) {
+        showStatus('error', 'Something went wrong. Please email bluepeartreellc@gmail.com.');
+        setLoading(false, originalLabel);
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
