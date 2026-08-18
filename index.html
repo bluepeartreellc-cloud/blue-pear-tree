@@ -1025,7 +1025,7 @@
     revealEls.forEach(el => { el.classList.add('reveal'); io.observe(el); });
   }
 
-  // Web3Forms AJAX
+  // Web3Forms (official JSON client method)
   const form = document.getElementById('contact-form');
   if (form) {
     const status = document.getElementById('form-status');
@@ -1052,18 +1052,30 @@
       if (btn) setLoading(true, 'Sending…');
       if (status) status.style.display = 'none';
       try {
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData.entries());
+        delete payload.botcheck;
         const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: new FormData(form)
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
         });
-        const data = await res.json();
-        if (!res.ok || !data.success) throw new Error(data.message || 'Submit failed');
-        form.reset();
-        showStatus('success', 'Thank you. Your request has been received. We will respond within one business day.');
-        setLoading(false, 'Request sent');
-        setTimeout(() => setLoading(false, originalLabel), 2500);
+        const data = await res.json().catch(function () { return {}; });
+        if (res.status === 200 && data.success) {
+          form.reset();
+          showStatus('success', 'Thank you. Your request has been received. We will respond within one business day.');
+          setLoading(false, 'Request sent');
+          setTimeout(function () { setLoading(false, originalLabel); }, 2500);
+          return;
+        }
+        const detail = data.message || ('Error ' + res.status);
+        showStatus('error', detail + ' If this continues, email bluepeartreellc@gmail.com.');
+        setLoading(false, originalLabel);
       } catch (err) {
-        showStatus('error', 'Something went wrong. Please email bluepeartreellc@gmail.com.');
+        showStatus('error', 'Network error. Please email bluepeartreellc@gmail.com.');
         setLoading(false, originalLabel);
       }
     });
