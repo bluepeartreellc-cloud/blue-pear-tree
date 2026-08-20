@@ -11,12 +11,15 @@ Vendor-neutral AI advising website for healthcare organizations.
    - `robots.txt`
 3. Commit and push. Cloudflare Pages rebuilds automatically.
 
+## Included in this build
+
+- Crisp blue/white clinical palette
+- Happy clinician photography (hero, about, team band)
+- Trust row: HIPAA-aligned · NIST AI RMF · Vendor-neutral · 1-day response
+- Principal Advisor credentials card
+- Lean splash with progress bar
+- Web3Forms → bluepeartreellc@gmail.com
+
 ## Contact form
 
-Web3Forms posts to **bluepeartreellc@gmail.com** using the access key in `index.html`.
-
-## Logos
-
-- Splash: `assets/logo-splash.webp` (peacock lockup)
-- Site icon: `assets/logo-icon.png` (header, hero, footer, favicon)
-- Edit `assets/brand.js` to retarget logo paths site-wide.
+Web3Forms posts using the access key in `index.html`.

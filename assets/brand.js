@@ -1,6 +1,6 @@
 /* Blue Pear Tree — edit this file to update logos site-wide. */
 window.BPT_BRAND = {
-  version: "20260818z",
+  version: "20260819b",
   icon: "assets/logo-icon.png",
   mark: "assets/logo-mark.png",
   splash: "assets/logo-splash.webp",
