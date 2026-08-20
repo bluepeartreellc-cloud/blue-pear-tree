@@ -1,6 +1,6 @@
 /**
  * Blue Pear Tree — React splash screen
- * Slow progress (~2.6s) + hold (~3s) + fade-out (~1.1s)
+ * Slow progress (~3s) + hold (~3.5s) + fade-out (~1.2s)
  */
 (function () {
   if (!window.React || !window.ReactDOM) {
@@ -15,9 +15,9 @@
   var useEffect = React.useEffect;
   var useRef = React.useRef;
 
-  var PROGRESS_MS = 2600;
-  var HOLD_MS = 3000;
-  var EXIT_MS = 1100;
+  var PROGRESS_MS = 3000;
+  var HOLD_MS = 3500;
+  var EXIT_MS = 1200;
   var LOGO_SRC = "assets/logo-splash.webp?v=20260819b";
   var LOGO_FALLBACK = "assets/logo-splash.jpg?v=20260819b";
 

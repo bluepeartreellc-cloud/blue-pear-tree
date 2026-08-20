@@ -18,7 +18,7 @@ Vendor-neutral AI advising website for healthcare organizations.
 - Trust row: HIPAA-aligned · NIST AI RMF · Vendor-neutral · 1-day response
 - Principal Advisor credentials card
 - Lean splash with progress bar
-- Web3Forms → bluepeartreellc@gmail.com
+- Public contact: info@bluepeartree.com (forward via Cloudflare Email Routing). Web3Forms may still deliver to your Gmail destination.
 
 ## Contact form
 
